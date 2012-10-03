@@ -12,8 +12,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.pwc.asku.R;
-
 /**
  * @author Jarrod Robins, Papercloud
  *
@@ -137,13 +135,24 @@ public class SimpleViewPagerIndicator extends LinearLayout implements OnPageChan
   }
 
   @Override
-  public void onPageScrollStateChanged(int state) { }
+  public void onPageScrollStateChanged(int state) { 
+    if (this.onPageChangeListener != null) {
+      this.onPageChangeListener.onPageScrollStateChanged(state);
+    }
+  }
 
   @Override
-  public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) { }
+  public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) { 
+    if (this.onPageChangeListener != null) {
+      this.onPageChangeListener.onPageScrolled(position, positionOffset, positionOffsetPixels);
+    }
+  }
 
   @Override
   public void onPageSelected(int position) {
     setCurrentItem(position);
+    if (this.onPageChangeListener != null) {
+      this.onPageChangeListener.onPageSelected(position);
+    }
   }
 }
