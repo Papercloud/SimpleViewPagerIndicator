@@ -12,11 +12,20 @@ Installation
 ------------
 + Add the SimpleViewPagerIndicator class, view\_pager\_indicator.xml layout file and sample images to your project.
 + Import your project's R file in SimpleViewPagerIndicator.
++ In your activity's layout file, add: 
+
+		<au.com.papercloud.pager.SimpleViewPagerIndicator
+	        android:id="@+id/page_indicator"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center" />
+   
 + In your activity that contains a ViewPager, just add:
 
-		SimpleViewPagerIndicator pageIndicator = new SimpleViewPagerIndicator(this);
+		SimpleViewPagerIndicator pageIndicator = (SimpleViewPagerIndicator) findViewById(R.id.page_indicator);
 		pageIndicator.setViewPager(pager);
 		
++ Of course, you may also create the indicator in code and add it to your activity's content view. 
 + Any time the view pager's data is changed, be sure to call
 
 		pageIndicator.notifyDataSetChanged();
