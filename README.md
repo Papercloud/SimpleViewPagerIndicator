@@ -40,6 +40,6 @@ This is a simple set of files that I've decided to open source because I thought
 
 Licence 
 -------
-This project is licenced under the GPLv2. You may use and change as you wish. No attribution is required.
+This project is licenced under the Apache Licence v2. You may use and change as you wish. No attribution is required.
 
 Developed by Jarrod Robins of [Papercloud](http://www.papercloud.com.au), 2012, 2013.
