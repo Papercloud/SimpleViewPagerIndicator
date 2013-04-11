@@ -38,4 +38,8 @@ Notes
 -----
 This is a simple set of files that I've decided to open source because I thought it'd be useful to someone else. In no way is it guaranteed to be highly optimised nor bug free. If anyone has any suggestions for improvement, please create a pull request. 
 
-Developed by Jarrod Robins of [Papercloud](http://www.papercloud.com.au), 2012.
+Licence 
+-------
+This project is licenced under the GPLv2. You may use and change as you wish. No attribution is required.
+
+Developed by Jarrod Robins of [Papercloud](http://www.papercloud.com.au), 2012, 2013.
